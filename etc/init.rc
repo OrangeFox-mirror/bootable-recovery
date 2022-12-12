@@ -17,7 +17,7 @@ on early-init
 
 on init
     export PATH /sbin:/system/bin
-    export LD_LIBRARY_PATH /system/lib64
+    export LD_LIBRARY_PATH /system/lib64:/system/lib:/vendor/lib64:/vendor/lib:/vendor/lib64/hw:/vendor/lib/hw
 
     export ANDROID_ROOT /system
     export ANDROID_DATA /data
