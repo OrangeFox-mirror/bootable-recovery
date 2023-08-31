@@ -3606,6 +3606,9 @@
 
 			<listbox style="scrolllist">
 				<placement x="%col1_x_left%" y="%row2_header_y%" w="%content_width%" h="%listbox_settings_height%"/>
+				<listitem name="{@auto_disable_avb2=Automatically disable AVB2.0}">
+					<data variable="tw_auto_disable_avb2"/>
+				</listitem>
 				<listitem name="{@zip_sig_chk=Zip signature verification}">
 					<data variable="tw_signed_zip_verify"/>
 				</listitem>
@@ -4145,6 +4148,17 @@
 
 			<listbox style="advanced_listbox">
 				<placement x="%indent%" y="%row2_header_y%" w="%content_width%" h="%fileselector_install_height%"/>
+				<listitem name="{@disable_avb2=Disable AVB2.0}">
+					<actions>
+						<action function="set">tw_back=advanced</action>
+						<action function="set">tw_action=disableAVB2</action>
+						<action function="set">tw_text1={@disable_avb2_confirm=Disable AVB2.0?}</action>
+						<action function="set">tw_action_text1={@disabling_AVB2=Disabling AVB2.0...}</action>
+						<action function="set">tw_complete_text1={@disabling_AVB2_complete=Disabled AVB2.0}</action>
+						<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+						<action function="page">confirm_action</action>
+					</actions>
+				</listitem>
 				<listitem name="{@reload_theme_btn=Reload Theme}">
 					<action function="reload"/>
 				</listitem>

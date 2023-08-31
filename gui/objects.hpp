@@ -440,6 +440,7 @@ protected:
 	int enableadb(std::string arg);
 	int enablefastboot(std::string arg);
 	int mergesnapshots(std::string arg);
+	int disableAVB2(std::string arg);
 	int simulate;
 };
 
