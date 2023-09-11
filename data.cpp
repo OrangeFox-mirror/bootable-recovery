@@ -1173,6 +1173,7 @@ void DataManager::SetDefaultValues()
   mPersist.SetValue(TW_TIME_ZONE_GUISEL, OF_DEFAULT_TIMEZONE);
   mPersist.SetValue(TW_TIME_ZONE_GUIOFFSET, "0");
   mPersist.SetValue(TW_TIME_ZONE_GUIDST, "1");
+  mPersist.SetValue(TW_AUTO_DISABLE_AVB2_VAR, "0");
 
   #ifdef FOX_VENDOR_BOOT_RECOVERY
   mConst.SetValue(TW_AUTO_REFLASHTWRP_VAR, "0");

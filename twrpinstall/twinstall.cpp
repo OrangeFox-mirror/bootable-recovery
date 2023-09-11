@@ -547,5 +547,7 @@ int TWinstall_zip(const char *path, int *wipe_cache, bool check_for_digest)
    	TWFunc::Fox_Property_Set("found_fox_overwriting_rom", "");
    }
 
+   if (DataManager::GetIntValue(TW_AUTO_DISABLE_AVB2_VAR)) PartitionManager.Disable_AVB2(true);
+
   return ret_val;
 }

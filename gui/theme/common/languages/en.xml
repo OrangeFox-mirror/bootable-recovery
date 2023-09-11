@@ -1195,5 +1195,12 @@
 		<string name="reflash_twrp">Flash current OrangeFox</string>
 		<string name="reflashing_twrp">Flashing OrangeFox...</string>
 		<string name="reflash_twrp_complete">Done flashing OrangeFox</string>
+		<string name="auto_disable_avb2">Automatically disable AVB2.0 after flashing ROM</string>
+		<string name="disable_avb2">Disable AVB2.0</string>
+		<string name="disable_avb2_confirm">Disable AVB2.0?</string>
+		<string name="disabling_AVB2">Disabling AVB2.0...</string>
+		<string name="disabling_AVB2_complete">AVB2.0 is disabled!</string>
+		<string name="disable_avb2_success_msg">Disable AVB2.0: processing '{1}' successfully.</string>
+		<string name="disable_avb2_fail_msg">Disable AVB2.0: processing '{1}' failed!</string>
 	</resources>
 </language>

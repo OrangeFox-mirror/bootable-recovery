@@ -240,6 +240,9 @@
 				<listitem name="{@use_rmrf_chk}">
 					<data variable="tw_rm_rf"/>
 				</listitem>
+				<listitem name="{@auto_disable_avb2}">
+					<data variable="tw_auto_disable_avb2"/>
+				</listitem>
 				<listitem name="{@zip_sig_chk}">
 					<data variable="tw_signed_zip_verify"/>
 				</listitem>
