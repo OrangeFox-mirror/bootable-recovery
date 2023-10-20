@@ -39,6 +39,8 @@
 		<!-- Partition display names -->
 		<string name="system">Sistema </string>
 		<string name="system_image">Imagen del sistema</string>
+		<string name="product">Product</string>
+		<string name="product_image">Imagen del Product</string>
 		<string name="vendor">Vendedor</string>
 		<string name="vendor_image">Imagen del vendedor </string>
 		<string name="boot">Arranque</string>

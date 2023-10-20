@@ -609,6 +609,11 @@ bool TWPartition::Process_Fstab_Line(const char *fstab_line, bool Display_Error,
 			Backup_Display_Name = Display_Name;
 			Can_Flash_Img = true;
 			Can_Be_Backed_Up = true;
+		} else if (Mount_Point == "/product_image") {
+			Display_Name = "Product Image";
+			Backup_Display_Name = Display_Name;
+			Can_Flash_Img = true;
+			Can_Be_Backed_Up = true;
 		} else if (Mount_Point == "/vendor_image") {
 			Display_Name = "Vendor Image";
 			Backup_Display_Name = Display_Name;

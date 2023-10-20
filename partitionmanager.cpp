@@ -3313,6 +3313,8 @@ void TWPartitionManager::Translate_Partition_Display_Names() {
 	LOGINFO("Translating partition display names\n");
 	Translate_Partition("/system", "system", "System");
 	Translate_Partition("/system_image", "system_image", "System Image");
+	Translate_Partition("/product", "product", "Product");
+	Translate_Partition("/product_image", "product_image", "Product Image");
 	Translate_Partition("/vendor", "vendor", "Vendor");
 	Translate_Partition("/vendor_image", "vendor_image", "Vendor Image");
 	Translate_Partition("/cache", "cache", "Cache");

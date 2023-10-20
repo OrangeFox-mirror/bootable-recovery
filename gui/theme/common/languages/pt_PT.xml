@@ -13,6 +13,8 @@
 		<!-- Partition display names -->
 		<string name="system">Sistema</string>
 		<string name="system_image">Imagem do sistema</string>
+		<string name="product">Product</string>
+		<string name="product_image">Imagem do Product</string>
 		<string name="vendor">Fornecedor</string>
 		<string name="vendor_image">Imagem do fornecedor</string>
 		<string name="boot">Boot</string>
