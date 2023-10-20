@@ -8,6 +8,8 @@
 		<!-- Partition display names -->
 		<string name="system">Sistem</string>
 		<string name="system_image">Sistem Image</string>
+		<string name="product">Product</string>
+		<string name="product_image">Product Image</string>
 		<string name="vendor">Vendor</string>
 		<string name="vendor_image">Vendor Image</string>
 		<string name="boot">Boot</string>

@@ -3313,6 +3313,8 @@ void TWPartitionManager::Translate_Partition_Display_Names() {
 	LOGINFO("Translating partition display names\n");
 	Translate_Partition("/system", "system", "System");
 	Translate_Partition("/system_image", "system_image", "System Image");
+	Translate_Partition("/product", "product", "Product");
+	Translate_Partition("/product_image", "product_image", "Product Image");
 	Translate_Partition("/vendor", "vendor", "Vendor");
 	Translate_Partition("/vendor_image", "vendor_image", "Vendor Image");
 	Translate_Partition("/cache", "cache", "Cache");
@@ -4568,7 +4570,8 @@ void TWPartitionManager::Setup_Super_Partition() {
 	superPartition->Mount_Point = "/super";
 	superPartition->Actual_Block_Device = superPart;
 	superPartition->Alternate_Block_Device = superPart;
-	superPartition->Backup_Display_Name = "Super (";
+	superPartition->Backup_Display_Name = "Super";
+	/*
 	// Add first 4 items to fstab as logical that you would like to display in Backup_Display_Name
 	// for the Super partition
 	int list_size = Super_Partition_List.size();
@@ -4585,6 +4588,7 @@ void TWPartitionManager::Setup_Super_Partition() {
 		list_size--;
 	}
 	superPartition->Backup_Display_Name += ")";
+	*/
 	superPartition->Can_Flash_Img = true;
 	superPartition->Current_File_System = "emmc";
 	superPartition->Can_Be_Backed_Up = true;

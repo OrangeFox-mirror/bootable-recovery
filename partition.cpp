@@ -476,7 +476,7 @@ bool TWPartition::Process_Fstab_Line(const char *fstab_line, bool Display_Error,
 			Backup_Path = Mount_Point;
 			Storage_Path = Mount_Point;
 			Display_Name = "System";
-			Backup_Name = "system";
+			Backup_Name = "System";
 			Backup_Display_Name = Display_Name;
 			Storage_Name = Display_Name;
 			Wipe_Available_in_GUI = false;
@@ -484,8 +484,8 @@ bool TWPartition::Process_Fstab_Line(const char *fstab_line, bool Display_Error,
 			Can_Be_Wiped = false;
 			Make_Dir(PartitionManager.Get_Android_Root_Path(), true);
 		} else if (Mount_Point == "/system_ext") {
-			Display_Name = "System_EXT";
-			Backup_Name = "System_EXT";
+			Display_Name = "System EXT";
+			Backup_Name = "System EXT";
 			Backup_Display_Name = Display_Name;
 			Storage_Name = Display_Name;
 			Can_Be_Backed_Up = Wipe_Available_in_GUI = Is_Super ? false : true;
@@ -606,6 +606,11 @@ bool TWPartition::Process_Fstab_Line(const char *fstab_line, bool Display_Error,
 			Can_Flash_Img = true;
 		} else if (Mount_Point == "/system_image") {
 			Display_Name = "System Image";
+			Backup_Display_Name = Display_Name;
+			Can_Flash_Img = true;
+			Can_Be_Backed_Up = true;
+		} else if (Mount_Point == "/product_image") {
+			Display_Name = "Product Image";
 			Backup_Display_Name = Display_Name;
 			Can_Flash_Img = true;
 			Can_Be_Backed_Up = true;

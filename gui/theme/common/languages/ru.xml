@@ -10,6 +10,8 @@
 		<!-- Partition display names -->
 		<string name="system">System</string>
 		<string name="system_image">System (образ)</string>
+		<string name="product">Product</string>
+		<string name="product_image">Product (образ)</string>
 		<string name="vendor">Vendor</string>
 		<string name="vendor_image">Vendor (образ)</string>
 		<string name="boot">Boot</string>
