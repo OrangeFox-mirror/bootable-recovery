@@ -1,6 +1,6 @@
 #
 #	This file is part of the OrangeFox Recovery Project
-# 	Copyright (C) 2018-2023 The OrangeFox Recovery Project
+# 	Copyright (C) 2018-2024 The OrangeFox Recovery Project
 #	
 #	OrangeFox is free software: you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
@@ -533,6 +533,11 @@ ifneq ($(OF_DEFAULT_TIMEZONE),)
     LOCAL_CFLAGS += -DOF_DEFAULT_TIMEZONE='"$(OF_DEFAULT_TIMEZONE)"'
 else
     LOCAL_CFLAGS += -DOF_DEFAULT_TIMEZONE='"CET-1;CEST,M3.5.0,M10.5.0"'
+endif
+
+# Don't spam the console with noisy loop device mount errors; just write them to the log file
+ifeq ($(OF_LOOP_DEVICE_ERRORS_TO_LOG),1)
+    LOCAL_CFLAGS += -DOF_LOOP_DEVICE_ERRORS_TO_LOG
 endif
 
 # renamed and deprecated build vars: cover both "FOX_ "and "OF_", but issue warnings about deprecation

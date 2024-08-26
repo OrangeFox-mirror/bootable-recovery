@@ -2,7 +2,7 @@
 	Copyright 2014 to 2021 TeamWin
 	This file is part of TWRP/TeamWin Recovery Project.
 
-	Copyright (C) 2018-2023 OrangeFox Recovery Project
+	Copyright (C) 2018-2024 OrangeFox Recovery Project
 	This file is part of the OrangeFox Recovery Project.
 
 	TWRP is free software: you can redistribute it and/or modify
@@ -4555,13 +4555,20 @@ void TWPartitionManager::Unlock_Block_Partitions() {
 		while ((de = readdir(d)) != NULL) {
 			if (de->d_type == DT_BLK) {
 				std::string block_device = block_path + de->d_name;
-				// LOGINFO("block_Device: %s\n", block_device.c_str()); // DJ9 - creates too much noise in the log
 				if ((fd = open(block_device.c_str(), O_RDONLY | O_CLOEXEC)) < 0) {
+					#ifdef OF_LOOP_DEVICE_ERRORS_TO_LOG
+					LOGINFO("unable to open block device %s: %s\n", block_device.c_str(), strerror(errno));
+					#else
 					LOGERR("unable to open block device %s: %s\n", block_device.c_str(), strerror(errno));
+					#endif
 					continue;
 				}
 				if (ioctl(fd, BLKROSET, &OFF) == -1) {
-					LOGERR("Unable to unlock %s: %s\n", block_device.c_str());
+					#ifdef OF_LOOP_DEVICE_ERRORS_TO_LOG
+					LOGINFO("Unable to unlock %s: %s\n", block_device.c_str(), strerror(errno));
+					#else
+					LOGERR("Unable to unlock %s: %s\n", block_device.c_str(), strerror(errno));
+					#endif
 					continue;
 				}
 				close(fd);
