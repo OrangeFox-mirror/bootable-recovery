@@ -6,7 +6,7 @@
 		<background color="#FFFFFF00" resource="cursor"/>
 		<speed multiplier="2.5"/>
 	</mousecursor>
-	
+
 	<resources>
 		<!-- Mouse cursor -->
 		<image name="cursor" filename="Default/Other/cursor" retainaspect="1"/>
@@ -19,13 +19,13 @@
 		<image name="nav_empty" filename="Default/NavPanel/empty"/>
 		<image name="nav_hl" filename="Default/NavPanel/hl"/>
 		<image name="nav_shadow" filename="Default/NavPanel/shadow" retainaspect="1"/>
-		
+
 		<image name="actionbar_shadow" filename="Default/ActionBar/shadow"/>
 		<image name="actionbar_btn" filename="Default/ActionBar/actionbar_btn" retainaspect="1"/>
 		<image name="actionbar_btn_hl" filename="Default/ActionBar/actionbar_btn_hl" retainaspect="1"/>
-		
+
 		<image name="fab_shadow" filename="Default/FAB/fab_shadow" retainaspect="1"/>
-		
+
 		<!-- Fonts Preview -->
 		<font name="font1" filename="Roboto-Regular.ttf" size="42"/>
 		<font name="font2" filename="RobotoSlab.ttf" size="42"/>
@@ -36,38 +36,38 @@
 		<font name="font7" filename="Exo2-Regular.ttf" size="42"/>
 		<font name="font8" filename="MILanPro-Regular.ttf" size="42"/>
 		<font name="font9" filename="Amatic.ttf" size="42"/>
-		
+
 		<font name="orangefont" filename="EuclidFlex-Regular.ttf" size="42"/>
 		<font name="about" filename="EuclidFlex-Medium.ttf" size="58"/>
-		
+
 		<!-- Splash Preview -->
 		<image name="splash_user" filename="Splash/user" retainaspect="1"/>
 		<image name="splash_bg" filename="Splash/original" retainaspect="1"/>
 		<image name="splash_logo_d" filename="Splash/logo_d" retainaspect="1"/>
 		<image name="splash_logo_o" filename="Splash/logo_o" retainaspect="1"/>
 		<image name="splash_logo_w" filename="Splash/logo_w" retainaspect="1"/>
-		
+
 		<!-- Workshop -->
 		<image name="style_gray" filename="Default/Workshop/StyleGray" retainaspect="1"/>
 		<image name="style_black" filename="Default/Workshop/StyleBlack" retainaspect="1"/>
 		<image name="style_night" filename="Default/Workshop/StyleNight" retainaspect="1"/>
 		<image name="style_light" filename="Default/Workshop/StyleLight" retainaspect="1"/>
-		
+
 		<image name="style_apply" filename="Default/Workshop/style_apply" retainaspect="1"/>
 		<image name="style_apply_black" filename="Default/Workshop/style_apply_black" retainaspect="1"/>
 		<image name="style_shadow" filename="Default/Workshop/style_shadow" retainaspect="1"/>
-	
+
 		<font name="fixed" filename="FiraCode-Regular.ttf" size="29"/>
 		<!-- Battery -->
 		<image name="battery15" filename="Default/Battery/battery15" retainaspect="1"/>
 		<image name="battery5" filename="Default/Battery/battery5" retainaspect="1"/>
 		<image name="battery_low_p" filename="Default/Battery/battery_low_p" retainaspect="1"/>
-		
+
 		<!-- Controls -->
 		<image name="btn_raised_warn" filename="Default/Controls/btn_raised_warn"/>
 		<image name="checkbox_false" filename="Default/Controls/checkbox_false_d" retainaspect="1"/>
 		<image name="radio_false" filename="Default/Controls/radio_false_d" retainaspect="1"/>
-		
+
 		<!-- Icons -->
 		<image name="bs_btn_open" filename="Default/Icons/bs_btn_open" retainaspect="1"/>
 		<image name="bs_btn_checksum" filename="Default/Icons/bs_btn_checksum" retainaspect="1"/>
@@ -104,12 +104,12 @@
 		<image name="sdcard" filename="Default/Icons/sdcard" retainaspect="1"/>
 		<image name="batch" filename="Default/Icons/batch" retainaspect="1"/>
 		<image name="edit" filename="Default/Icons/edit" retainaspect="1"/>
-		
+
 		<!-- Info -->
 		<image name="icon_warning" filename="Default/Info/icon_warning" retainaspect="1"/>
 		<image name="db_hl" filename="Default/Dialog/db_hl"/>
 		<image name="db_empty" filename="Default/Dialog/db"/>
-		
+
 		<!-- Keyboard -->
 		<image name="backspace" filename="Default/Keyboard/backspace" retainaspect="1"/>
 		<image name="shift" filename="Default/Keyboard/shift" retainaspect="1"/>
@@ -120,7 +120,7 @@
 		<image name="kb_arrow_right" filename="Default/Keyboard/kb_arrow_right" retainaspect="1"/>
 		<image name="kb_arrow_up" filename="Default/Keyboard/kb_arrow_up" retainaspect="1"/>
 		<image name="kb_arrow_down" filename="Default/Keyboard/kb_arrow_down" retainaspect="1"/>
-		
+
 		<!-- Nav Bar -->
 		<image name="home_white" filename="Default/NavBar/home" retainaspect="1"/>
 		<image name="back_white" filename="Default/NavBar/back" retainaspect="1"/>
@@ -134,7 +134,7 @@
 		<image name="back_white_pie" filename="Default/NavBar/back_pie" retainaspect="1"/>
 		<image name="home_white_pie" filename="Default/NavBar/home_pie" retainaspect="1"/>
 		<image name="slideout_white_key_pie" filename="Default/NavBar/slideout_key_pie" retainaspect="1"/>
-		
+
 		<image name="home_dark" filename="Default/NavBar/Light/home" retainaspect="1"/>
 		<image name="back_dark" filename="Default/NavBar/Light/back" retainaspect="1"/>
 		<image name="slideout_dark" filename="Default/NavBar/Light/slideout" retainaspect="1"/>
@@ -147,9 +147,9 @@
 		<image name="back_dark_pie" filename="Default/NavBar/Light/back_pie" retainaspect="1"/>
 		<image name="home_dark_pie" filename="Default/NavBar/Light/home_pie" retainaspect="1"/>
 		<image name="slideout_dark_key_pie" filename="Default/NavBar/Light/slideout_key_pie" retainaspect="1"/>
-		
+
 		<image name="quick_arrow_black" filename="Default/Controls/qa_arrow" retainaspect="1"/>
-		
+
 		<image name="nb_btn" filename="Default/NavBar/btn" retainaspect="1"/>
 		<image name="nb_btn_hl" filename="Default/NavBar/btn_hl" retainaspect="1"/>
 
@@ -190,7 +190,7 @@
 		<image name="image_off" filename="Default/Icons/image_off" retainaspect="1"/>
 		<image name="logo_icon" filename="Default/Icons/logo" retainaspect="1"/>
 		<image name="user" filename="Default/Icons/user" retainaspect="1"/>
-		
+
 		<!-- Other -->
 		<image name="actionbar_show" filename="Default/Other/show" retainaspect="1"/>
 		<image name="actionbar_clear" filename="Default/Other/actionbar_clear" retainaspect="1"/>
@@ -198,7 +198,7 @@
 		<image name="fox_lock" filename="Default/FullscreenIcons/fox_lock" retainaspect="1"/>
 		<image name="empty_box" filename="Default/FullscreenIcons/box" retainaspect="1"/>
 		<image name="actionbar_w_back" filename="Default/ActionBar/back" retainaspect="1"/>
-		
+
 		<!-- About -->
 		<image name="logo_big" filename="Default/About/logo" retainaspect="1"/>
 		<image name="card" filename="Default/About/card" retainaspect="1"/>
