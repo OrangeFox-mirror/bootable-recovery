@@ -2,7 +2,7 @@
 	Copyright 2013 to 2021 TeamWin
 	This file is part of TWRP/TeamWin Recovery Project.
 
-	Copyright (C) 2018-2022 OrangeFox Recovery Project
+	Copyright (C) 2018-2024 OrangeFox Recovery Project
 	This file is part of the OrangeFox Recovery Project.
 	
 	TWRP is free software: you can redistribute it and/or modify
@@ -1974,7 +1974,7 @@ bool TWPartition::Repair() {
 			return false;
 		gui_msg(Msg("repairing_using=Repairing {1} using {2}...")(Display_Name)("fsck.f2fs"));
 		Find_Actual_Block_Device();
-		command = "/system/bin/fsck.f2fs " + Actual_Block_Device;
+		command = "/system/bin/fsck.f2fs -y " + Actual_Block_Device;
 		LOGINFO("Repair command: %s\n", command.c_str());
 		// try to unbind /sdcard if it is still bind-mounted
 		#ifdef OF_UNBIND_SDCARD_F2FS
