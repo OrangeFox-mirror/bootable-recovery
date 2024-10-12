@@ -586,26 +586,6 @@ ifneq ($(TW_EXCLUDE_NANO),true)
 	cp -rf $(TARGET_OUT_ETC)/nano $(TARGET_RECOVERY_ROOT_OUT)/system/etc/; \
 	cp -rf external/libncurses/lib/terminfo $(TARGET_RECOVERY_ROOT_OUT)/system/etc/;
 endif
-
-# copy the twres/ files if not being done otherwise
-ifeq ($(OF_MANUAL_COPY_TWRES),1)
-FOX_GUI_THEME_PATH := $(LOCAL_PATH)/gui/theme
-FOX_TWRP_THEME_LOC := $(FOX_GUI_THEME_PATH)/$(TW_THEME)
-FOX_TARGET_TWRES_PATH := $(TARGET_RECOVERY_ROOT_OUT)/twres/
-
-LOCAL_POST_INSTALL_CMD += \
-        mkdir -p $(FOX_TARGET_TWRES_PATH); \
-        mkdir -p $(TARGET_RECOVERY_ROOT_OUT)/twres/; \
-        cp -fr $(FOX_TWRP_THEME_LOC)/* $(FOX_TARGET_TWRES_PATH); \
-        cp -fr $(FOX_GUI_THEME_PATH)/common/* $(FOX_TARGET_TWRES_PATH);
-        ifeq ($(TW_EXTRA_LANGUAGES),true)
-    	   LOCAL_POST_INSTALL_CMD += \
-    	   cp -fr $(FOX_GUI_THEME_PATH)/extra-languages/fonts/ $(FOX_TARGET_TWRES_PATH); \
-    	   cp -fr $(FOX_GUI_THEME_PATH)/extra-languages/languages/ $(FOX_TARGET_TWRES_PATH);
-	endif
-    	LOCAL_POST_INSTALL_CMD += \
-        cp -fr $(FOX_TARGET_TWRES_PATH) $(TARGET_ROOT_OUT)/;
-endif
 #
 # Darth9
 
