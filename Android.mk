@@ -581,7 +581,7 @@ LOCAL_POST_INSTALL_CMD := \
 # Darth9
 #
 # make sure that the terminfo directory is copied for nano
-ifneq ($(TW_EXCLUDE_NANO),true)
+ifeq ($(FOX_USE_NANO_EDITOR),1)
 	LOCAL_POST_INSTALL_CMD += \
 	cp -rf $(TARGET_OUT_ETC)/nano $(TARGET_RECOVERY_ROOT_OUT)/system/etc/; \
 	cp -rf external/libncurses/lib/terminfo $(TARGET_RECOVERY_ROOT_OUT)/system/etc/;
